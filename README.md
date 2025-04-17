@@ -21,7 +21,7 @@ Live Server를 통해 브라우저에서 바로 확인해볼 수 있어요!
 
 ```
 📁 my-profile/
-├── profile.html
+├── index.html
 └── README.md
 ```
 
