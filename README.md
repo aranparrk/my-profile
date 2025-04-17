@@ -19,7 +19,11 @@ Live Server를 통해 브라우저에서 바로 확인해볼 수 있어요!
 
 ## 📁 파일 구성
 
-📁 profile-card/ ├── profile.html └── README.md
+```
+📁 my-profile/
+├── profile.html
+└── README.md
+```
 
 ---
 
