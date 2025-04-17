@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>프로필</title>
+    <!-- 1. style은 head에 들어가나? -->
+    <style>
+      body {
+        font-family: "Arial", sans-serif; /* body 전체 글꼴 설정 */
+        background-color: #fff8f8; /* 배경색 지정 */
+        display: flex; /* 정렬 준비 */
+        justify-content: center; /* 가로 정렬 */
+        align-items: center; /* 이건 생각 안 남.. */
+        height: 100vh; /* 높이 정하는 건데 vh가 뭐더라? */
+        margin: 0; /* margin을 0으로 주는 이유가 뭐지? */
+      }
+      .card {
+        background-color: #fff;
+        border-radius: 20px; /* 테두리 동그랗게 */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 박스에 그림자 만드는 건데 어떤 값을 넣는 건지는 모르겠어 */
+        padding: 30px; /* 박스와 박스안에 간격 지정 */
+        width: 280px; /* 가로 길이 */
+        text-align: center; /* 글씨 정렬 */
+      }
+      .card img {
+        border-radius: 50%; /* 이미지 테두리 동그랗게 근데 %는 얼마나 둥그러지는가? */
+        width: 120px; /* 가로 길이 */
+        height: 120px; /* 세로 길이*/
+        object-fit: cover; /* 뭔지 모르겠다.. */
+        margin-bottom: 15px; /* 마진을 밑에만 */
+      }
+      .card h1 {
+        font-size: 1.5rem; /* 폰트크기, 크기 단위는 모르겠음..*/
+        margin-bottom: 10px; /* 마진을 밑에만 */
+      }
+      .card p {
+        margin: 6px 0; /* 양 옆 6px, 위아래 0*/
+        font-size: 0.95rem;
+      }
+      .card .btn {
+        /* class명이면 그냥 .btn만 해도 되는 거 아닌가? 왜 굳이 .card .btn로 하지? */
+        display: inline-block; /* 바로 옆에 붙는다 */
+        margin-top: 15px; /* 위에 margin */
+        padding: 10px 16px; /* 위아래 10, 양옆 16 */
+        background-color: #ffd1dc; /* 핑크 버튼~*/
+        color: #333; /* 검은 글씨 */
+        text-decoration: none; /* none을 할 거면 왜 하는 거지? 일단 text-decoration이 뭔지 모르겠음 */
+        font-weight: bold; /* 글씨 굵게.. 글씨 모양을 주려면 font-weight를 쓰는 건가? 취소선이나 기울임도 가능? */
+        transition: background-color 0.3s ease; /* 배경색을 0.3초로 ease한다는 건가? ease가 뭐지? */
+      }
+      .card .btn:hover {
+        background-color: #ffb6c1;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <img src="https://placehold.co/120x120" alt="프로필" />
+      <h1>👑 박공주</h1>
+      <p>
+        <!-- 2. strong이 무언가? -->
+        <strong>한 줄 소개:</strong> 오늘도 Git과 싸운 진짜 공주
+      </p>
+      <p><strong>좋아하는 것:</strong> 자동화, 마크업, 상태바 ✨</p>
+
+      <!-- 📍 위치 정보 -->
+      <p>📍 서울, 한국</p>
+
+      <!-- 📎 외부 링크 버튼 -->
+      <a href="https://github.com/aranparrk" target="_blank" class="btn"
+        >GitHub 보기</a
+      >
+    </div>
+  </body>
+</html>
